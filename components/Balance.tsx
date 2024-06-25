@@ -9,7 +9,7 @@ const Balance = async () => {
     return (
         <>
             <h4>Your Balance:</h4>
-            <h2>${addCommas(balance  ?? 0)}</h2>
+            <h2>${addCommas(Number(balance?.toFixed(2)) ?? 0)}</h2>
         </>
     )
 }
